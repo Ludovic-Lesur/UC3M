@@ -1,0 +1,29 @@
+Command line:
+   tbNave_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49869
+
+Sun Dec 06 12:21:27 2015
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 516.047 Meg
+
+ Total Signals          : 29
+ Total Nets             : 39
+ Total Signal Drivers   : 19
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 13
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 1569
+Total Line Count : 63
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 358.486 Meg
+
+Sun Dec 06 12:23:15 2015
+

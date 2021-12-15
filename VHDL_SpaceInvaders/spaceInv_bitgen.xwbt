@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Ludovic\Desktop\espacio\spaceInv.ncd
+OUTFILE=C:\Users\Ludovic\Desktop\espacio\spaceInv.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Ludovic\Desktop\espacio
+LICENSE=WebPack
+USER_INFO=211085033_0_0_311

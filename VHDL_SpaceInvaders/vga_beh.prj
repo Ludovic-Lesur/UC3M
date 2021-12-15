@@ -1,0 +1,5 @@
+vhdl work "sync_v.vhd"
+vhdl work "sync_h.vhd"
+vhdl work "rgb.vhd"
+vhdl work "divisor_f.vhd"
+vhdl work "vga.vhd"

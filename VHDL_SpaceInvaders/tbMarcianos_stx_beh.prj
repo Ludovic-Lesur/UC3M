@@ -1,0 +1,2 @@
+vhdl isim_temp "marcianos.vhd"
+vhdl isim_temp "tbMarcianos.vhd"

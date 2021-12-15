@@ -1,0 +1,3 @@
+vhdl isim_temp "partido.vhd"
+vhdl isim_temp "maquinaEstado.vhd"
+vhdl isim_temp "tbMaquinaEstado.vhd"

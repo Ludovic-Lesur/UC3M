@@ -1,0 +1,128 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 05 16:46:52 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "B" LOCATE = SITE "G15" LEVEL 1;
+COMP "G" LOCATE = SITE "H15" LEVEL 1;
+COMP "R" LOCATE = SITE "H14" LEVEL 1;
+COMP "Clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "Derecha" LOCATE = SITE "H13" LEVEL 1;
+COMP "Disparo" LOCATE = SITE "V16" LEVEL 1;
+COMP "Test" LOCATE = SITE "N17" LEVEL 1;
+COMP "HSync" LOCATE = SITE "F15" LEVEL 1;
+COMP "VSync" LOCATE = SITE "F14" LEVEL 1;
+COMP "Reset" LOCATE = SITE "L13" LEVEL 1;
+COMP "Inicio" LOCATE = SITE "V4" LEVEL 1;
+COMP "Izquierda" LOCATE = SITE "D18" LEVEL 1;
+NET "Clk_BUFGP/IBUFG" BEL "Clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP Clk = BEL "bloqueTempoNave/EnableNave" BEL
+        "bloqueTempoBala/EnableBala" BEL "bloqueTempoInicio/Inicio" BEL
+        "bloqueVga/bloqueDivisorF/a" BEL "bloqueTempoInicio/a_0" BEL
+        "bloqueTempoInicio/a_1" BEL "bloqueTempoInicio/a_2" BEL
+        "bloqueTempoInicio/a_3" BEL "bloqueTempoInicio/a_4" BEL
+        "bloqueTempoInicio/a_5" BEL "bloqueTempoInicio/a_6" BEL
+        "bloqueTempoInicio/a_7" BEL "bloqueTempoInicio/a_8" BEL
+        "bloqueTempoInicio/a_9" BEL "bloqueTempoInicio/a_10" BEL
+        "bloqueTempoInicio/a_11" BEL "bloqueTempoInicio/a_12" BEL
+        "bloqueTempoInicio/a_13" BEL "bloqueTempoInicio/a_14" BEL
+        "bloqueTempoInicio/a_15" BEL "bloqueTempoInicio/a_16" BEL
+        "bloqueTempoInicio/a_17" BEL "bloqueTempoInicio/a_18" BEL
+        "bloqueTempoInicio/a_19" BEL "bloqueTempoInicio/a_20" BEL
+        "bloqueTempoInicio/a_21" BEL "bloqueTempoInicio/a_22" BEL
+        "bloqueTempoInicio/a_23" BEL "bloqueTempoInicio/a_24" BEL
+        "bloqueTempoInicio/a_25" BEL "bloqueTempoInicio/a_26" BEL
+        "bloqueTempoInicio/a_27" BEL "bloqueTempoInicio/a_28" BEL
+        "bloqueTempoInicio/a_29" BEL "bloqueTempoInicio/a_30" BEL
+        "bloqueTempoInicio/a_31" BEL "bloqueTempoBala/a_0" BEL
+        "bloqueTempoBala/a_1" BEL "bloqueTempoBala/a_2" BEL
+        "bloqueTempoBala/a_3" BEL "bloqueTempoBala/a_4" BEL
+        "bloqueTempoBala/a_5" BEL "bloqueTempoBala/a_6" BEL
+        "bloqueTempoBala/a_7" BEL "bloqueTempoBala/a_8" BEL
+        "bloqueTempoBala/a_9" BEL "bloqueTempoBala/a_10" BEL
+        "bloqueTempoBala/a_11" BEL "bloqueTempoBala/a_12" BEL
+        "bloqueTempoBala/a_13" BEL "bloqueTempoBala/a_14" BEL
+        "bloqueTempoBala/a_15" BEL "bloqueTempoBala/a_16" BEL
+        "bloqueTempoBala/a_17" BEL "bloqueTempoBala/a_18" BEL
+        "bloqueTempoBala/a_19" BEL "bloqueTempoBala/a_20" BEL
+        "bloqueTempoBala/a_21" BEL "bloqueTempoBala/a_22" BEL
+        "bloqueTempoBala/a_23" BEL "bloqueTempoBala/a_24" BEL
+        "bloqueTempoBala/a_25" BEL "bloqueTempoBala/a_26" BEL
+        "bloqueTempoBala/a_27" BEL "bloqueTempoBala/a_28" BEL
+        "bloqueTempoBala/a_29" BEL "bloqueTempoBala/a_30" BEL
+        "bloqueTempoBala/a_31" BEL "bloqueTempoNave/a_0" BEL
+        "bloqueTempoNave/a_1" BEL "bloqueTempoNave/a_2" BEL
+        "bloqueTempoNave/a_3" BEL "bloqueTempoNave/a_4" BEL
+        "bloqueTempoNave/a_5" BEL "bloqueTempoNave/a_6" BEL
+        "bloqueTempoNave/a_7" BEL "bloqueTempoNave/a_8" BEL
+        "bloqueTempoNave/a_9" BEL "bloqueTempoNave/a_10" BEL
+        "bloqueTempoNave/a_11" BEL "bloqueTempoNave/a_12" BEL
+        "bloqueTempoNave/a_13" BEL "bloqueTempoNave/a_14" BEL
+        "bloqueTempoNave/a_15" BEL "bloqueTempoNave/a_16" BEL
+        "bloqueTempoNave/a_17" BEL "bloqueTempoNave/a_18" BEL
+        "bloqueTempoNave/a_19" BEL "bloqueTempoNave/a_20" BEL
+        "bloqueTempoNave/a_21" BEL "bloqueTempoNave/a_22" BEL
+        "bloqueTempoNave/a_23" BEL "bloqueTempoNave/a_24" BEL
+        "bloqueTempoNave/a_25" BEL "bloqueTempoNave/a_26" BEL
+        "bloqueTempoNave/a_27" BEL "bloqueTempoNave/a_28" BEL
+        "bloqueTempoNave/a_29" BEL "bloqueTempoNave/a_30" BEL
+        "bloqueTempoNave/a_31" BEL "bloqueMarcianos/fila_7" BEL
+        "bloqueMarcianos/fila_6" BEL "bloqueMarcianos/fila_5" BEL
+        "bloqueMarcianos/fila_4" BEL "bloqueMarcianos/fila_3" BEL
+        "bloqueMarcianos/fila_2" BEL "bloqueMarcianos/fila_1" BEL
+        "bloqueMarcianos/fila_0" BEL "bloqueMarcianos/Tocado" BEL
+        "bloqueMarcianos/fila_19" BEL "bloqueMarcianos/yComun_3" BEL
+        "bloqueMarcianos/yComun_2" BEL "bloqueMarcianos/yComun_1" BEL
+        "bloqueMarcianos/yComun_0" BEL "bloqueMarcianos/fila_18" BEL
+        "bloqueMarcianos/fila_17" BEL "bloqueMarcianos/fila_16" BEL
+        "bloqueMarcianos/fila_15" BEL "bloqueMarcianos/fila_14" BEL
+        "bloqueMarcianos/fila_13" BEL "bloqueMarcianos/fila_12" BEL
+        "bloqueMarcianos/fila_11" BEL "bloqueMarcianos/fila_10" BEL
+        "bloqueMarcianos/fila_9" BEL "bloqueMarcianos/fila_8" BEL
+        "bloqueTempoMarcianos/a_31" BEL "bloqueTempoMarcianos/a_30" BEL
+        "bloqueTempoMarcianos/a_29" BEL "bloqueTempoMarcianos/a_28" BEL
+        "bloqueTempoMarcianos/a_27" BEL "bloqueTempoMarcianos/a_26" BEL
+        "bloqueTempoMarcianos/a_25" BEL "bloqueTempoMarcianos/a_24" BEL
+        "bloqueTempoMarcianos/a_23" BEL "bloqueTempoMarcianos/a_22" BEL
+        "bloqueTempoMarcianos/a_21" BEL "bloqueTempoMarcianos/a_20" BEL
+        "bloqueTempoMarcianos/a_19" BEL "bloqueTempoMarcianos/a_18" BEL
+        "bloqueTempoMarcianos/a_17" BEL "bloqueTempoMarcianos/a_16" BEL
+        "bloqueTempoMarcianos/a_15" BEL "bloqueTempoMarcianos/a_14" BEL
+        "bloqueTempoMarcianos/a_13" BEL "bloqueTempoMarcianos/a_12" BEL
+        "bloqueTempoMarcianos/a_11" BEL "bloqueTempoMarcianos/a_10" BEL
+        "bloqueTempoMarcianos/a_9" BEL "bloqueTempoMarcianos/a_8" BEL
+        "bloqueTempoMarcianos/a_7" BEL "bloqueTempoMarcianos/a_6" BEL
+        "bloqueTempoMarcianos/a_5" BEL "bloqueTempoMarcianos/a_4" BEL
+        "bloqueTempoMarcianos/a_3" BEL "bloqueTempoMarcianos/a_2" BEL
+        "bloqueTempoMarcianos/a_1" BEL "bloqueTempoMarcianos/a_0" BEL
+        "bloqueTempoMarcianos/EnableMarcianos" BEL
+        "bloqueMaquinaEstado/estadoActual_FSM_FFd2" BEL
+        "bloqueMaquinaEstado/estadoActual_FSM_FFd1" BEL
+        "bloqueMaquinaEstado/estadoActual_FSM_FFd3" BEL
+        "bloqueMaquinaEstado/partidosGanados_2" BEL
+        "bloqueMaquinaEstado/partidosGanados_1" BEL
+        "bloqueMaquinaEstado/partidosGanados_3" BEL
+        "bloqueMaquinaEstado/partidosGanados_0" BEL
+        "bloqueMaquinaEstado/InicioAnt" BEL "bloqueVga/bloqueSyncH/p_9" BEL
+        "bloqueVga/bloqueSyncH/p_8" BEL "bloqueVga/bloqueSyncH/p_7" BEL
+        "bloqueVga/bloqueSyncH/p_6" BEL "bloqueVga/bloqueSyncH/p_5" BEL
+        "bloqueVga/bloqueSyncH/p_4" BEL "bloqueVga/bloqueSyncH/p_3" BEL
+        "bloqueVga/bloqueSyncH/p_2" BEL "bloqueVga/bloqueSyncH/p_1" BEL
+        "bloqueVga/bloqueSyncH/p_0" BEL "bloqueVga/bloqueSyncV/p_9" BEL
+        "bloqueVga/bloqueSyncV/p_8" BEL "bloqueVga/bloqueSyncV/p_7" BEL
+        "bloqueVga/bloqueSyncV/p_6" BEL "bloqueVga/bloqueSyncV/p_5" BEL
+        "bloqueVga/bloqueSyncV/p_4" BEL "bloqueVga/bloqueSyncV/p_3" BEL
+        "bloqueVga/bloqueSyncV/p_2" BEL "bloqueVga/bloqueSyncV/p_1" BEL
+        "bloqueVga/bloqueSyncV/p_0" BEL "bloqueNave/xNave_2" BEL
+        "bloqueNave/xNave_0" BEL "bloqueNave/xNave_1" BEL "bloqueNave/xNave_3"
+        BEL "bloqueNave/xNave_4" BEL "bloqueNave/DerechaAnt" BEL
+        "bloqueNave/IzquierdaAnt" BEL "bloqueBala/yBalaInt_0" BEL
+        "bloqueBala/yBalaInt_1" BEL "bloqueBala/yBalaInt_2" BEL
+        "bloqueBala/yBalaInt_3" BEL "bloqueBala/DisparoAnt" BEL
+        "bloqueBala/Inicial" BEL "bloqueBala/xBalaInt_4" BEL
+        "bloqueBala/xBalaInt_3" BEL "bloqueBala/xBalaInt_2" BEL
+        "bloqueBala/xBalaInt_1" BEL "bloqueBala/xBalaInt_0" BEL
+        "Clk_BUFGP/BUFG.GCLKMUX" BEL "Clk_BUFGP/BUFG";
+TS_Clk = PERIOD TIMEGRP "Clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,2 @@
+vhdl isim_temp "formato.vhd"
+vhdl isim_temp "tbFormato.vhd"

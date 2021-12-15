@@ -1,0 +1,3 @@
+vhdl work "partido.vhd"
+vhdl work "maquinaEstado.vhd"
+vhdl work "tbMaquinaEstado.vhd"

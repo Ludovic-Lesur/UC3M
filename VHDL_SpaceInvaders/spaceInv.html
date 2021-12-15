@@ -1,0 +1,2447 @@
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#000099" link="#000099" vlink="#990099" text="#000000">
+<a name="anchor1"></a>
+<table border="0" cellpadding="1" cellspacing="1" bgcolor="#DDDDDD">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1" bgcolor="#DDDDDD">
+<tr>
+<td><big>Release 14.7 Trace  (nt)</big></td>
+</tr>
+<tr>
+<td>Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.</td>
+</tr>
+<tr>
+<td><b>C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf
+spaceinv.ucf
+
+</b></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><b>Design file:</b></td><td>spaceInv.ncd</td>
+</tr>
+<tr>
+<td><b>Physical constraint file:</b></td><td>spaceInv.pcf</td>
+</tr>
+<tr>
+<td><b>Device,package,speed:</b></td><td>xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)</td>
+</tr>
+<tr>
+<td><b>Report level: </b></td><td>verbose report</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<hr>
+<table border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td align="left"><b>Environment Variable</b></td><td align="left"><b>Effect</b></td>
+</tr>
+<tr>
+<td align="left">NONE</td><td align="center">No environment variables were set</td>
+</tr>
+</tbody>
+</table>
+<a name="anchor2"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<td>
+<tr>
+<td>INFO:Timing:3412 - To improve timing, see the <a href="infoHelpLink^UG612">Timing Closure User Guide (UG612).</a></td>
+</tr>
+</td>
+</table>
+<a name="anchor3"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<td>
+<tr>
+<td>INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths option. All paths that are not constrained will be reported in the unconstrained paths section(s) of the report.</td>
+</tr>
+</td>
+</table>
+<a name="anchor4"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<td>
+<tr>
+<td>INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a 50 Ohm transmission line loading model.  For the details of this model, and for more information on accounting for different loading conditions, please see the device datasheet.</td>
+</tr>
+</td>
+</table>
+<a name="anchor5"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<td>
+<tr>
+<td>INFO:Timing:3390 - This architecture does not support a default System Jitter value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock Uncertainty calculation.</td>
+</tr>
+</td>
+</table>
+<a name="anchor6"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<td>
+<tr>
+<td>INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 'Phase Error' calculations, these terms will be zero in the Clock Uncertainty calculation.  Please make appropriate modification to SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase Error.</td>
+</tr>
+</td>
+</table>
+<a name="anchor7"></a>
+<br>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Timing constraint: TS_Clk = PERIOD TIMEGRP "Clk" 20 ns HIGH 50%;</b></td>
+</tr>
+<tr>
+<td><b>For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+</b></td>
+</tr>
+<tr>
+<td>1659486 paths analyzed, 705 endpoints analyzed, 0 failing endpoints</td>
+</tr>
+<tr>
+<td>0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)</td>
+</tr><tr><td> Minimum period is  19.614ns.</td></tr></table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Paths for end point bloqueTempoMarcianos/a_31 (SLICE_X53Y47.CIN), 91294 paths
+</b></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.386ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_31 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.586ns (Levels of Logic = 23)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.028ns (0.098 - 0.126)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_31</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.G1</td><td>net (fanout=34)</td><td align="right">1.900</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.COUT</td><td>Topcyg</td><td align="right">1.001</td><td align="left">bloqueTempoMarcianos/a&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_lut&lt;3&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;29&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y47.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;29&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y47.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;30&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;30&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;31&gt;<br>bloqueTempoMarcianos/a_31</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.586ns</td><td>(13.217ns logic, 6.369ns route)<br>(67.5% logic, 32.5% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor10"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.386ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_31 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.586ns (Levels of Logic = 22)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.028ns (0.098 - 0.126)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_31</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.F1</td><td>net (fanout=34)</td><td align="right">1.857</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_lut&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;29&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y47.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;29&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y47.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;30&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;30&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;31&gt;<br>bloqueTempoMarcianos/a_31</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.586ns</td><td>(13.260ns logic, 6.326ns route)<br>(67.7% logic, 32.3% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor12"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.391ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_31 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.581ns (Levels of Logic = 24)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.028ns (0.098 - 0.126)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_31</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y32.BX</td><td>net (fanout=34)</td><td align="right">2.009</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y32.COUT</td><td>Tbxcy</td><td align="right">0.769</td><td align="left">bloqueTempoMarcianos/a&lt;0&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;0&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;1&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;1&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;29&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y47.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;29&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y47.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;30&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;30&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;31&gt;<br>bloqueTempoMarcianos/a_31</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.581ns</td><td>(13.103ns logic, 6.478ns route)<br>(66.9% logic, 33.1% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor14"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Paths for end point bloqueTempoMarcianos/a_29 (SLICE_X53Y46.CIN), 85404 paths
+</b></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.504ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_29 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.468ns (Levels of Logic = 22)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.028ns (0.098 - 0.126)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_29</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.G1</td><td>net (fanout=34)</td><td align="right">1.900</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.COUT</td><td>Topcyg</td><td align="right">1.001</td><td align="left">bloqueTempoMarcianos/a&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_lut&lt;3&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;29&gt;<br>bloqueTempoMarcianos/a_29</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.468ns</td><td>(13.099ns logic, 6.369ns route)<br>(67.3% logic, 32.7% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor16"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.504ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_29 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.468ns (Levels of Logic = 21)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.028ns (0.098 - 0.126)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_29</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.F1</td><td>net (fanout=34)</td><td align="right">1.857</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_lut&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;29&gt;<br>bloqueTempoMarcianos/a_29</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.468ns</td><td>(13.142ns logic, 6.326ns route)<br>(67.5% logic, 32.5% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor18"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.509ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_29 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.463ns (Levels of Logic = 23)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.028ns (0.098 - 0.126)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_29</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y32.BX</td><td>net (fanout=34)</td><td align="right">2.009</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y32.COUT</td><td>Tbxcy</td><td align="right">0.769</td><td align="left">bloqueTempoMarcianos/a&lt;0&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;0&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;1&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;1&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;27&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y46.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;28&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;29&gt;<br>bloqueTempoMarcianos/a_29</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.463ns</td><td>(12.985ns logic, 6.478ns route)<br>(66.7% logic, 33.3% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor20"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Paths for end point bloqueTempoMarcianos/a_27 (SLICE_X53Y45.CIN), 79514 paths
+</b></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.625ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_27 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.350ns (Levels of Logic = 21)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.025ns (0.033 - 0.058)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_27</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.G1</td><td>net (fanout=34)</td><td align="right">1.900</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.COUT</td><td>Topcyg</td><td align="right">1.001</td><td align="left">bloqueTempoMarcianos/a&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_lut&lt;3&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;27&gt;<br>bloqueTempoMarcianos/a_27</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.350ns</td><td>(12.981ns logic, 6.369ns route)<br>(67.1% logic, 32.9% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor22"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.625ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_27 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.350ns (Levels of Logic = 20)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.025ns (0.033 - 0.058)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_27</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.F1</td><td>net (fanout=34)</td><td align="right">1.857</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_lut&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;27&gt;<br>bloqueTempoMarcianos/a_27</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.350ns</td><td>(13.024ns logic, 6.326ns route)<br>(67.3% logic, 32.7% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor24"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (setup path):</b>0.630ns  <b>(requirement - (data path - clock path skew + uncertainty))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueMaquinaEstado/partidosGanados_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 0.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueTempoMarcianos/a_27 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>20.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>19.345ns (Levels of Logic = 22)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.025ns (0.033 - 0.058)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_27</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y32.YQ</td><td>Tcko</td><td align="right">0.587</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;1&gt;<br>bloqueMaquinaEstado/partidosGanados_0</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.F3</td><td>net (fanout=14)</td><td align="right">1.768</td><td align="left">bloqueMaquinaEstado/partidosGanados&lt;0&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X65Y33.X</td><td>Tilo</td><td align="right">0.704</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>bloqueTempoMarcianos/_sub0000&lt;5&gt;1</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.A5</td><td>net (fanout=1)</td><td align="right">1.288</td><td align="left">bloqueTempoMarcianos/_sub0000&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>MULT18X18_X1Y4.P21</td><td>Tmult</td><td align="right">4.873</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001<br>bloqueTempoMarcianos/Mmult__mult0001</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.F4</td><td>net (fanout=1)</td><td align="right">1.291</td><td align="left">bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y35.COUT</td><td>Topcyf</td><td align="right">1.162</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_lut&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;21&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;22&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;23&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;24&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;25&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;26&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;27&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;28&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X55Y39.Y</td><td>Tciny</td><td align="right">0.869</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_cy&lt;29&gt;<br>bloqueTempoMarcianos/Mmult__mult00010_Madd_xor&lt;30&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.G1</td><td>net (fanout=1)</td><td align="right">0.122</td><td align="left">bloqueTempoMarcianos/_mult0001&lt;30&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X54Y38.COUT</td><td>Topcyg</td><td align="right">1.131</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut&lt;15&gt;<br>bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y32.BX</td><td>net (fanout=34)</td><td align="right">2.009</td><td align="left">bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y32.COUT</td><td>Tbxcy</td><td align="right">0.769</td><td align="left">bloqueTempoMarcianos/a&lt;0&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;0&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;1&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;1&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y33.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;2&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;3&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y34.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;4&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;5&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y35.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;6&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;7&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y36.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;8&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;9&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y37.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;10&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;11&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y38.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;12&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;13&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y39.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;14&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;15&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y40.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;16&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;17&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y41.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;18&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;19&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y42.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;20&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;21&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y43.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;22&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;23&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y44.COUT</td><td>Tbyp</td><td align="right">0.118</td><td align="left">bloqueTempoMarcianos/a&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;24&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CIN</td><td>net (fanout=1)</td><td align="right">0.000</td><td align="left">bloqueTempoMarcianos/Mcount_a_cy&lt;25&gt;<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y45.CLK</td><td>Tcinck</td><td align="right">1.002</td><td align="left">bloqueTempoMarcianos/a&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_cy&lt;26&gt;<br>bloqueTempoMarcianos/Mcount_a_xor&lt;27&gt;<br>bloqueTempoMarcianos/a_27</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">19.345ns</td><td>(12.867ns logic, 6.478ns route)<br>(66.5% logic, 33.5% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor26"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Hold Paths: TS_Clk = PERIOD TIMEGRP "Clk" 20 ns HIGH 50%;
+</b></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Paths for end point bloqueVga/bloqueSyncH/p_0 (SLICE_X53Y65.CE), 1 path
+</b></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (hold path):</b>1.125ns  <b>(requirement - (clock path skew + uncertainty - data path))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueVga/bloqueDivisorF/a (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueVga/bloqueSyncH/p_0 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>0.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>1.124ns (Levels of Logic = 0)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.001ns (0.004 - 0.005)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Minimum Data Path: bloqueVga/bloqueDivisorF/a to bloqueVga/bloqueSyncH/p_0</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X52Y67.YQ</td><td>Tcko</td><td align="right">0.522</td><td align="left">bloqueVga/bloqueDivisorF/a<br>bloqueVga/bloqueDivisorF/a</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y65.CE</td><td>net (fanout=7)</td><td align="right">0.533</td><td align="left">bloqueVga/bloqueDivisorF/a<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y65.CLK</td><td>Tckce</td><td align="right">(-Th)&nbsp;&nbsp;-0.069</td><td align="left">bloqueVga/bloqueSyncH/p&lt;0&gt;<br>bloqueVga/bloqueSyncH/p_0</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">1.124ns</td><td>(0.591ns logic, 0.533ns route)<br>(52.6% logic, 47.4% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor28"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Paths for end point bloqueVga/bloqueSyncH/p_1 (SLICE_X53Y65.CE), 1 path
+</b></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (hold path):</b>1.125ns  <b>(requirement - (clock path skew + uncertainty - data path))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueVga/bloqueDivisorF/a (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueVga/bloqueSyncH/p_1 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>0.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>1.124ns (Levels of Logic = 0)</td><td align="center"><b>Clock Path Skew:</b>
+<br>-0.001ns (0.004 - 0.005)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Minimum Data Path: bloqueVga/bloqueDivisorF/a to bloqueVga/bloqueSyncH/p_1</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X52Y67.YQ</td><td>Tcko</td><td align="right">0.522</td><td align="left">bloqueVga/bloqueDivisorF/a<br>bloqueVga/bloqueDivisorF/a</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y65.CE</td><td>net (fanout=7)</td><td align="right">0.533</td><td align="left">bloqueVga/bloqueDivisorF/a<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y65.CLK</td><td>Tckce</td><td align="right">(-Th)&nbsp;&nbsp;-0.069</td><td align="left">bloqueVga/bloqueSyncH/p&lt;0&gt;<br>bloqueVga/bloqueSyncH/p_1</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">1.124ns</td><td>(0.591ns logic, 0.533ns route)<br>(52.6% logic, 47.4% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor30"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td><b>Paths for end point bloqueVga/bloqueSyncH/p_6 (SLICE_X53Y68.CE), 1 path
+</b></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack (hold path):</b>1.152ns  <b>(requirement - (clock path skew + uncertainty - data path))</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" cellpadding="1">
+<tr>
+<td><b>Source: </b>bloqueVga/bloqueDivisorF/a (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+<tr>
+<td><b>Destination: </b>bloqueVga/bloqueSyncH/p_6 (FF)</td><td><b>clk: </b>Clk_BUFGP rising at 20.000ns</td>
+</tr>
+</table>
+</td><td> </td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td align="center"><b>Requirement</b>
+<br>0.000ns</td><td align="center"><b>Data Path Delay</b>
+<br>1.153ns (Levels of Logic = 0)</td><td align="center"><b>Clock Path Skew:</b>
+<br>0.001ns (0.006 - 0.005)</td><td align="center"><b>Clock Uncertainty</b>
+<br>0.000ns</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="1">
+<tr>
+<td>Minimum Data Path: bloqueVga/bloqueDivisorF/a to bloqueVga/bloqueSyncH/p_6</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr valign="bottom" align="left">
+<td><b>Location</b></td><td><b>Delay type</b></td><td align="right"><b>Delay(ns)</b></td><td align="left"><b>Physical Resource <br>Logical Resource(s)</b></td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X52Y67.YQ</td><td>Tcko</td><td align="right">0.522</td><td align="left">bloqueVga/bloqueDivisorF/a<br>bloqueVga/bloqueDivisorF/a</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y68.CE</td><td>net (fanout=7)</td><td align="right">0.562</td><td align="left">bloqueVga/bloqueDivisorF/a<br>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td>SLICE_X53Y68.CLK</td><td>Tckce</td><td align="right">(-Th)&nbsp;&nbsp;-0.069</td><td align="left">bloqueVga/bloqueSyncH/p&lt;6&gt;<br>bloqueVga/bloqueSyncH/p_6</td>
+</tr>
+<tr>
+<td></td><td align="right"><b>Total</b></td><td align="right">1.153ns</td><td>(0.591ns logic, 0.562ns route)<br>(51.3% logic, 48.7% route)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="anchor32"></a><b>Component Switching Limit Checks: TS_Clk = PERIOD TIMEGRP "Clk" 20 ns HIGH 50%;</b>
+<br>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack: 16.808</b>ns<b> (period - (min low pulse limit / (low pulse / period)))</b></td>
+</tr>
+</table>
+<table border="1" cellpadding="1" cellspacing="1">
+<tr>
+<td> Period: </td><td>20.000ns</td>
+</tr>
+<tr>
+<td> Low pulse: </td><td>10.000ns</td>
+</tr>
+<tr>
+<td> Low pulse limit: </td><td>1.596ns (Trpw)</td>
+</tr>
+<tr>
+<td> Physical resource: </td><td>bloqueTempoMarcianos/a&lt;0&gt;/SR</td>
+</tr>
+<tr>
+<td> Logical resource: </td><td>bloqueTempoMarcianos/a_0/SR</td>
+</tr>
+<tr>
+<td>  Location pin: </td><td>SLICE_X53Y32.SR</td>
+</tr>
+<tr>
+<td>  Clock network: </td><td>Reset_IBUF</td>
+</tr>
+</table>
+<a name="anchor34"></a>
+<br>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack: 16.808</b>ns<b> (period - (min high pulse limit / (high pulse / period)))</b></td>
+</tr>
+</table>
+<table border="1" cellpadding="1" cellspacing="1">
+<tr>
+<td> Period: </td><td>20.000ns</td>
+</tr>
+<tr>
+<td>  High pulse: </td><td>10.000ns</td>
+</tr>
+<tr>
+<td>  High pulse limit: </td><td>1.596ns (Trpw)</td>
+</tr>
+<tr>
+<td> Physical resource: </td><td>bloqueTempoMarcianos/a&lt;0&gt;/SR</td>
+</tr>
+<tr>
+<td> Logical resource: </td><td>bloqueTempoMarcianos/a_0/SR</td>
+</tr>
+<tr>
+<td>  Location pin: </td><td>SLICE_X53Y32.SR</td>
+</tr>
+<tr>
+<td>  Clock network: </td><td>Reset_IBUF</td>
+</tr>
+</table>
+<a name="anchor35"></a>
+<br>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Slack: 16.808</b>ns<b> (period - (min low pulse limit / (low pulse / period)))</b></td>
+</tr>
+</table>
+<table border="1" cellpadding="1" cellspacing="1">
+<tr>
+<td> Period: </td><td>20.000ns</td>
+</tr>
+<tr>
+<td> Low pulse: </td><td>10.000ns</td>
+</tr>
+<tr>
+<td> Low pulse limit: </td><td>1.596ns (Trpw)</td>
+</tr>
+<tr>
+<td> Physical resource: </td><td>bloqueTempoMarcianos/a&lt;0&gt;/SR</td>
+</tr>
+<tr>
+<td> Logical resource: </td><td>bloqueTempoMarcianos/a_1/SR</td>
+</tr>
+<tr>
+<td>  Location pin: </td><td>SLICE_X53Y32.SR</td>
+</tr>
+<tr>
+<td>  Clock network: </td><td>Reset_IBUF</td>
+</tr>
+</table>
+<big><a name="anchor36"></a>All constraints were met.</big>
+<br>
+<a name="anchor37"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><big><b>Data Sheet report: All values displayed in nanoseconds (ns)</b></big></td>
+</tr>
+</table>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Clock to Setup on destination clock Clk</b></td>
+</tr>
+<tr>
+<td>
+<table border="1" width="100%">
+<tr>
+<td align="left"><b> <br>Source Clock</b></td><td align="right"><b>Src:Rise<br>Dest:Rise</b></td><td align="right"><b>Src:Fall<br>Dest:Rise</b></td><td align="right"><b>Src:Rise<br>Dest:Fall</b></td><td align="right"><b>Src:Fall<br>Dest:Fall</b></td>
+</tr>
+<tr>
+<td align="left">Clk</td><td align="right">19.614</td><td align="right">&nbsp;</td><td align="right">&nbsp;</td><td align="right">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+<a name="anchor39"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><big><b>Timing summary:</b></big></td>
+</tr>
+<tr>
+<td><b>Timing errors: </b>0<b>  Score: </b>0<b>  (Setup/Max: </b>0<b>, Hold: </b>0<b>)</b></td><td></td>
+</tr>
+<tr>
+<td><b> Constraints cover </b>1659486<b> paths,  </b>0<b> nets, and  </b>1506<b> connections </b></td>
+</tr>
+<tr>
+<td><a name="anchor40"></a>
+<table border="1"><tr><td><b>Design statistics:</b></td></tr><tr><td>Minimum period:  19.614ns<sup>{1}</sup>(Maximum frequency:  50.984MHz)</td></tr></table>
+</td>
+</tr>
+</table>
+<br>
+<b>Footnotes</b>
+<br>
+<table border="1">
+<tr>
+<td>1</td><td>The minimum period statistic assumes all single cycle delays.</td>
+</tr>
+</table>
+<b>Analysis completed </b>Sat Dec 05 16:00:06 2015 <br>
+<br>
+<a name="anchor41"></a>
+<table border="0" cellpadding="1" cellspacing="1">
+<tr bgcolor="#DDDDDD">
+<td><b>Trace Settings:</b></td>
+</tr>
+<tr>
+<td><b>Trace Settings</b>  <pre>
+
+Peak Memory Usage: 136 MB
+</pre>
+</td>
+</tr>
+</table>
+</body>

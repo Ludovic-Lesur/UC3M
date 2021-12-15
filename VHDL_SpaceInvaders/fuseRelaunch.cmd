@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Ludovic/Documents/Xilinx/espacio/tbMaquinaEstado_isim_beh.exe" -prj "C:/Users/Ludovic/Documents/Xilinx/espacio/tbMaquinaEstado_beh.prj" "work.tbMaquinaEstado" 

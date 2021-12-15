@@ -1,0 +1,4 @@
+Nombre de la librería : uc3m
+MAGRAB Edward ; An Engineer's Guide To Matlab ; Ed: Prentice Hall ; 611469 ; false ;
+HOROWITZ Paul ; The Art Of Electronics ; Ed: Cambridge University Press ; 285583 ; true ; LESUR Ludovic ;
+JONES David ; PCB Design Tutorial ; Ed: Alternate Zone ; 33831 ; false ;

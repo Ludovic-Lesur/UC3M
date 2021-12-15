@@ -1,0 +1,15 @@
+[Inputs]
+Clk
+Reset
+Inicio
+Test
+Izquierda
+Derecha
+Disparo
+[Outputs]
+HSync
+VSync
+R
+G
+B
+[BiDir]

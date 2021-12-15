@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Documents and Settings\Xilinx\Escritorio\espacio\impact.xsl
+OUTFILE=C:\Documents and Settings\Xilinx\Escritorio\espacio\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Documents and Settings\Xilinx\Escritorio\espacio
+LICENSE=iMPACT
+USER_INFO=iMPACT

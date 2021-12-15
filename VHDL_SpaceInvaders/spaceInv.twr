@@ -1,0 +1,1193 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf
+spaceinv.ucf
+
+Design file:              spaceInv.ncd
+Physical constraint file: spaceInv.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_Clk = PERIOD TIMEGRP "Clk" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1659486 paths analyzed, 705 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  19.614ns.
+--------------------------------------------------------------------------------
+
+Paths for end point bloqueTempoMarcianos/a_31 (SLICE_X53Y47.CIN), 91294 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.386ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_31 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.586ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.028ns (0.098 - 0.126)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y33.G1      net (fanout=34)       1.900   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y33.COUT    Topcyg                1.001   bloqueTempoMarcianos/a<2>
+                                                       bloqueTempoMarcianos/Mcount_a_lut<3>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<29>
+    SLICE_X53Y47.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<29>
+    SLICE_X53Y47.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<30>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<30>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<31>
+                                                       bloqueTempoMarcianos/a_31
+    -------------------------------------------------  ---------------------------
+    Total                                     19.586ns (13.217ns logic, 6.369ns route)
+                                                       (67.5% logic, 32.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.386ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_31 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.586ns (Levels of Logic = 22)
+  Clock Path Skew:      -0.028ns (0.098 - 0.126)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y34.F1      net (fanout=34)       1.857   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y34.COUT    Topcyf                1.162   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_lut<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<29>
+    SLICE_X53Y47.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<29>
+    SLICE_X53Y47.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<30>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<30>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<31>
+                                                       bloqueTempoMarcianos/a_31
+    -------------------------------------------------  ---------------------------
+    Total                                     19.586ns (13.260ns logic, 6.326ns route)
+                                                       (67.7% logic, 32.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.391ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_31 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.581ns (Levels of Logic = 24)
+  Clock Path Skew:      -0.028ns (0.098 - 0.126)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y32.BX      net (fanout=34)       2.009   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y32.COUT    Tbxcy                 0.769   bloqueTempoMarcianos/a<0>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<0>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<1>
+    SLICE_X53Y33.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<1>
+    SLICE_X53Y33.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<2>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<2>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<29>
+    SLICE_X53Y47.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<29>
+    SLICE_X53Y47.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<30>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<30>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<31>
+                                                       bloqueTempoMarcianos/a_31
+    -------------------------------------------------  ---------------------------
+    Total                                     19.581ns (13.103ns logic, 6.478ns route)
+                                                       (66.9% logic, 33.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point bloqueTempoMarcianos/a_29 (SLICE_X53Y46.CIN), 85404 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.504ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_29 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.468ns (Levels of Logic = 22)
+  Clock Path Skew:      -0.028ns (0.098 - 0.126)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y33.G1      net (fanout=34)       1.900   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y33.COUT    Topcyg                1.001   bloqueTempoMarcianos/a<2>
+                                                       bloqueTempoMarcianos/Mcount_a_lut<3>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<28>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<29>
+                                                       bloqueTempoMarcianos/a_29
+    -------------------------------------------------  ---------------------------
+    Total                                     19.468ns (13.099ns logic, 6.369ns route)
+                                                       (67.3% logic, 32.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.504ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_29 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.468ns (Levels of Logic = 21)
+  Clock Path Skew:      -0.028ns (0.098 - 0.126)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y34.F1      net (fanout=34)       1.857   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y34.COUT    Topcyf                1.162   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_lut<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<28>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<29>
+                                                       bloqueTempoMarcianos/a_29
+    -------------------------------------------------  ---------------------------
+    Total                                     19.468ns (13.142ns logic, 6.326ns route)
+                                                       (67.5% logic, 32.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.509ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_29 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.463ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.028ns (0.098 - 0.126)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y32.BX      net (fanout=34)       2.009   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y32.COUT    Tbxcy                 0.769   bloqueTempoMarcianos/a<0>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<0>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<1>
+    SLICE_X53Y33.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<1>
+    SLICE_X53Y33.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<2>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<2>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<27>
+    SLICE_X53Y46.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<28>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<28>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<29>
+                                                       bloqueTempoMarcianos/a_29
+    -------------------------------------------------  ---------------------------
+    Total                                     19.463ns (12.985ns logic, 6.478ns route)
+                                                       (66.7% logic, 33.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point bloqueTempoMarcianos/a_27 (SLICE_X53Y45.CIN), 79514 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.625ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_27 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.350ns (Levels of Logic = 21)
+  Clock Path Skew:      -0.025ns (0.033 - 0.058)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_27
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y33.G1      net (fanout=34)       1.900   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y33.COUT    Topcyg                1.001   bloqueTempoMarcianos/a<2>
+                                                       bloqueTempoMarcianos/Mcount_a_lut<3>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<27>
+                                                       bloqueTempoMarcianos/a_27
+    -------------------------------------------------  ---------------------------
+    Total                                     19.350ns (12.981ns logic, 6.369ns route)
+                                                       (67.1% logic, 32.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.625ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_27 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.350ns (Levels of Logic = 20)
+  Clock Path Skew:      -0.025ns (0.033 - 0.058)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_27
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y34.F1      net (fanout=34)       1.857   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y34.COUT    Topcyf                1.162   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_lut<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<27>
+                                                       bloqueTempoMarcianos/a_27
+    -------------------------------------------------  ---------------------------
+    Total                                     19.350ns (13.024ns logic, 6.326ns route)
+                                                       (67.3% logic, 32.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.630ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bloqueMaquinaEstado/partidosGanados_0 (FF)
+  Destination:          bloqueTempoMarcianos/a_27 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      19.345ns (Levels of Logic = 22)
+  Clock Path Skew:      -0.025ns (0.033 - 0.058)
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: bloqueMaquinaEstado/partidosGanados_0 to bloqueTempoMarcianos/a_27
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y32.YQ      Tcko                  0.587   bloqueMaquinaEstado/partidosGanados<1>
+                                                       bloqueMaquinaEstado/partidosGanados_0
+    SLICE_X65Y33.F3      net (fanout=14)       1.768   bloqueMaquinaEstado/partidosGanados<0>
+    SLICE_X65Y33.X       Tilo                  0.704   bloqueTempoMarcianos/_sub0000<5>
+                                                       bloqueTempoMarcianos/_sub0000<5>1
+    MULT18X18_X1Y4.A5    net (fanout=1)        1.288   bloqueTempoMarcianos/_sub0000<5>
+    MULT18X18_X1Y4.P21   Tmult                 4.873   bloqueTempoMarcianos/Mmult__mult0001
+                                                       bloqueTempoMarcianos/Mmult__mult0001
+    SLICE_X55Y35.F4      net (fanout=1)        1.291   bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_21
+    SLICE_X55Y35.COUT    Topcyf                1.162   bloqueTempoMarcianos/_mult0001<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/_mult0001<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>
+    SLICE_X55Y39.Y       Tciny                 0.869   bloqueTempoMarcianos/_mult0001<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>
+                                                       bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30>
+    SLICE_X54Y38.G1      net (fanout=1)        0.122   bloqueTempoMarcianos/_mult0001<30>
+    SLICE_X54Y38.COUT    Topcyg                1.131   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>
+                                                       bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y32.BX      net (fanout=34)       2.009   bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>
+    SLICE_X53Y32.COUT    Tbxcy                 0.769   bloqueTempoMarcianos/a<0>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<0>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<1>
+    SLICE_X53Y33.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<1>
+    SLICE_X53Y33.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<2>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<2>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<3>
+    SLICE_X53Y34.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<4>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<5>
+    SLICE_X53Y35.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<6>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<7>
+    SLICE_X53Y36.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<8>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<9>
+    SLICE_X53Y37.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<10>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<11>
+    SLICE_X53Y38.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<12>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<13>
+    SLICE_X53Y39.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<14>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<15>
+    SLICE_X53Y40.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<16>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<17>
+    SLICE_X53Y41.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<18>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<19>
+    SLICE_X53Y42.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<20>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<21>
+    SLICE_X53Y43.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<22>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<23>
+    SLICE_X53Y44.COUT    Tbyp                  0.118   bloqueTempoMarcianos/a<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<24>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CIN     net (fanout=1)        0.000   bloqueTempoMarcianos/Mcount_a_cy<25>
+    SLICE_X53Y45.CLK     Tcinck                1.002   bloqueTempoMarcianos/a<26>
+                                                       bloqueTempoMarcianos/Mcount_a_cy<26>
+                                                       bloqueTempoMarcianos/Mcount_a_xor<27>
+                                                       bloqueTempoMarcianos/a_27
+    -------------------------------------------------  ---------------------------
+    Total                                     19.345ns (12.867ns logic, 6.478ns route)
+                                                       (66.5% logic, 33.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_Clk = PERIOD TIMEGRP "Clk" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point bloqueVga/bloqueSyncH/p_0 (SLICE_X53Y65.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.125ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               bloqueVga/bloqueDivisorF/a (FF)
+  Destination:          bloqueVga/bloqueSyncH/p_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.124ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.001ns (0.004 - 0.005)
+  Source Clock:         Clk_BUFGP rising at 20.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: bloqueVga/bloqueDivisorF/a to bloqueVga/bloqueSyncH/p_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y67.YQ      Tcko                  0.522   bloqueVga/bloqueDivisorF/a
+                                                       bloqueVga/bloqueDivisorF/a
+    SLICE_X53Y65.CE      net (fanout=7)        0.533   bloqueVga/bloqueDivisorF/a
+    SLICE_X53Y65.CLK     Tckce       (-Th)    -0.069   bloqueVga/bloqueSyncH/p<0>
+                                                       bloqueVga/bloqueSyncH/p_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.124ns (0.591ns logic, 0.533ns route)
+                                                       (52.6% logic, 47.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point bloqueVga/bloqueSyncH/p_1 (SLICE_X53Y65.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.125ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               bloqueVga/bloqueDivisorF/a (FF)
+  Destination:          bloqueVga/bloqueSyncH/p_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.124ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.001ns (0.004 - 0.005)
+  Source Clock:         Clk_BUFGP rising at 20.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: bloqueVga/bloqueDivisorF/a to bloqueVga/bloqueSyncH/p_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y67.YQ      Tcko                  0.522   bloqueVga/bloqueDivisorF/a
+                                                       bloqueVga/bloqueDivisorF/a
+    SLICE_X53Y65.CE      net (fanout=7)        0.533   bloqueVga/bloqueDivisorF/a
+    SLICE_X53Y65.CLK     Tckce       (-Th)    -0.069   bloqueVga/bloqueSyncH/p<0>
+                                                       bloqueVga/bloqueSyncH/p_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.124ns (0.591ns logic, 0.533ns route)
+                                                       (52.6% logic, 47.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point bloqueVga/bloqueSyncH/p_6 (SLICE_X53Y68.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.152ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               bloqueVga/bloqueDivisorF/a (FF)
+  Destination:          bloqueVga/bloqueSyncH/p_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.153ns (Levels of Logic = 0)
+  Clock Path Skew:      0.001ns (0.006 - 0.005)
+  Source Clock:         Clk_BUFGP rising at 20.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: bloqueVga/bloqueDivisorF/a to bloqueVga/bloqueSyncH/p_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y67.YQ      Tcko                  0.522   bloqueVga/bloqueDivisorF/a
+                                                       bloqueVga/bloqueDivisorF/a
+    SLICE_X53Y68.CE      net (fanout=7)        0.562   bloqueVga/bloqueDivisorF/a
+    SLICE_X53Y68.CLK     Tckce       (-Th)    -0.069   bloqueVga/bloqueSyncH/p<6>
+                                                       bloqueVga/bloqueSyncH/p_6
+    -------------------------------------------------  ---------------------------
+    Total                                      1.153ns (0.591ns logic, 0.562ns route)
+                                                       (51.3% logic, 48.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_Clk = PERIOD TIMEGRP "Clk" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: bloqueTempoMarcianos/a<0>/SR
+  Logical resource: bloqueTempoMarcianos/a_0/SR
+  Location pin: SLICE_X53Y32.SR
+  Clock network: Reset_IBUF
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.596ns (Trpw)
+  Physical resource: bloqueTempoMarcianos/a<0>/SR
+  Logical resource: bloqueTempoMarcianos/a_0/SR
+  Location pin: SLICE_X53Y32.SR
+  Clock network: Reset_IBUF
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: bloqueTempoMarcianos/a<0>/SR
+  Logical resource: bloqueTempoMarcianos/a_1/SR
+  Location pin: SLICE_X53Y32.SR
+  Clock network: Reset_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |   19.614|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 1659486 paths, 0 nets, and 1506 connections
+
+Design statistics:
+   Minimum period:  19.614ns{1}   (Maximum frequency:  50.984MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sat Dec 05 16:47:12 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 136 MB
+
+
+

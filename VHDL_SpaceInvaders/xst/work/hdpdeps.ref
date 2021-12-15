@@ -1,0 +1,122 @@
+V3 77
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/bala.vhd" 2015/11/30.12:57:16 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/divisorF.vhd" 2015/11/09.11:42:44 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/formato.vhd" 2015/11/30.13:45:50 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/maquinaEstado.vhd" 2015/11/30.13:47:39 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/marcianos.vhd" 2015/11/30.11:29:59 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/nave.vhd" 2015/11/30.12:54:42 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/partido.vhd" 2015/11/30.11:48:00 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/rgbMux.vhd" 2015/11/16.12:04:42 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.vhd" 2015/11/30.13:30:20 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/syncH.vhd" 2015/11/09.11:44:06 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/syncV.vhd" 2015/10/27.15:55:38 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/tempoBala.vhd" 2015/11/16.12:24:32 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/tempoMarcianos.vhd" 2015/11/30.11:52:18 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/tempoNave.vhd" 2015/11/09.11:55:42 P.20131013
+FL "C:/Documents and Settings/Xilinx/Escritorio/espacio/vga.vhd" 2015/11/02.11:39:00 P.20131013
+FL C:/Users/Ludovic/Desktop/espacio/bala.vhd 2015/12/01.18:41:16 P.20131013
+EN work/bala 1449328919 FL C:/Users/Ludovic/Desktop/espacio/bala.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/bala/Behavioral 1449328920 \
+      FL C:/Users/Ludovic/Desktop/espacio/bala.vhd EN work/bala 1449328919
+FL C:/Users/Ludovic/Desktop/espacio/divisorF.vhd 2015/12/01.17:58:28 P.20131013
+EN work/divisorF 1449328899 FL C:/Users/Ludovic/Desktop/espacio/divisorF.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/divisorF/Behavioral 1449328900 \
+      FL C:/Users/Ludovic/Desktop/espacio/divisorF.vhd EN work/divisorF 1449328899
+FL C:/Users/Ludovic/Desktop/espacio/formato.vhd 2015/12/01.18:17:38 P.20131013
+EN work/formato 1449328911 FL C:/Users/Ludovic/Desktop/espacio/formato.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/formato/Behavioral 1449328912 \
+      FL C:/Users/Ludovic/Desktop/espacio/formato.vhd EN work/formato 1449328911
+FL C:/Users/Ludovic/Desktop/espacio/maquinaEstado.vhd 2015/12/05.11:32:26 P.20131013
+EN work/maquinaEstado 1449328925 \
+      FL C:/Users/Ludovic/Desktop/espacio/maquinaEstado.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/partido 1449328898 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/maquinaEstado/Behavioral 1449328926 \
+      FL C:/Users/Ludovic/Desktop/espacio/maquinaEstado.vhd EN work/maquinaEstado 1449328925
+FL C:/Users/Ludovic/Desktop/espacio/marcianos.vhd 2015/12/01.18:13:32 P.20131013
+EN work/marcianos 1449328909 FL C:/Users/Ludovic/Desktop/espacio/marcianos.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/marcianos/Behavioral 1449328910 \
+      FL C:/Users/Ludovic/Desktop/espacio/marcianos.vhd EN work/marcianos 1449328909
+FL C:/Users/Ludovic/Desktop/espacio/nave.vhd 2015/12/01.18:32:14 P.20131013
+EN work/nave 1449328915 FL C:/Users/Ludovic/Desktop/espacio/nave.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/nave/Behavioral 1449328916 \
+      FL C:/Users/Ludovic/Desktop/espacio/nave.vhd EN work/nave 1449328915
+FL C:/Users/Ludovic/Desktop/espacio/partido.vhd 2015/12/01.16:03:48 P.20131013
+PH work/partido 1449328897 FL C:/Users/Ludovic/Desktop/espacio/partido.vhd \
+      PB ieee/std_logic_1164 1381692176
+PB work/partido 1449328898 \
+      FL C:/Users/Ludovic/Desktop/espacio/partido.vhd PH work/partido 1449328897
+FL C:/Users/Ludovic/Desktop/espacio/rgbMux.vhd 2015/12/01.18:04:36 P.20131013
+EN work/rgbMux 1449328905 FL C:/Users/Ludovic/Desktop/espacio/rgbMux.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/rgbMux/Behavioral 1449328906 \
+      FL C:/Users/Ludovic/Desktop/espacio/rgbMux.vhd EN work/rgbMux 1449328905
+FL C:/Users/Ludovic/Desktop/espacio/spaceInv.vhd 2015/12/01.19:06:46 P.20131013
+EN work/spaceInv 1449328927 FL C:/Users/Ludovic/Desktop/espacio/spaceInv.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/partido 1449328898 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/spaceInv/Behavioral 1449328928 \
+      FL C:/Users/Ludovic/Desktop/espacio/spaceInv.vhd EN work/spaceInv 1449328927 \
+      CP vga CP marcianos CP formato CP tempoMarcianos CP nave CP tempoNave CP bala \
+      CP tempoBala CP tempoInicio CP maquinaEstado
+FL C:/Users/Ludovic/Desktop/espacio/syncH.vhd 2015/12/01.18:02:56 P.20131013
+EN work/syncH 1449328901 FL C:/Users/Ludovic/Desktop/espacio/syncH.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/syncH/Behavioral 1449328902 \
+      FL C:/Users/Ludovic/Desktop/espacio/syncH.vhd EN work/syncH 1449328901
+FL C:/Users/Ludovic/Desktop/espacio/syncV.vhd 2015/12/01.18:03:06 P.20131013
+EN work/syncV 1449328903 FL C:/Users/Ludovic/Desktop/espacio/syncV.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/syncV/Behavioral 1449328904 \
+      FL C:/Users/Ludovic/Desktop/espacio/syncV.vhd EN work/syncV 1449328903
+FL C:/Users/Ludovic/Desktop/espacio/tempoBala.vhd 2015/12/01.16:55:18 P.20131013
+EN work/tempoBala 1449328921 FL C:/Users/Ludovic/Desktop/espacio/tempoBala.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/partido 1449328898 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/tempoBala/Behavioral 1449328922 \
+      FL C:/Users/Ludovic/Desktop/espacio/tempoBala.vhd EN work/tempoBala 1449328921
+FL C:/Users/Ludovic/Desktop/espacio/tempoInicio.vhd 2015/12/01.19:06:24 P.20131013
+EN work/tempoInicio 1449328923 \
+      FL C:/Users/Ludovic/Desktop/espacio/tempoInicio.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB work/partido 1449328898 PB ieee/NUMERIC_STD 1381692181
+AR work/tempoInicio/Behavioral 1449328924 \
+      FL C:/Users/Ludovic/Desktop/espacio/tempoInicio.vhd EN work/tempoInicio 1449328923
+FL C:/Users/Ludovic/Desktop/espacio/tempoMarcianos.vhd 2015/12/05.15:52:25 P.20131013
+EN work/tempoMarcianos 1449328913 \
+      FL C:/Users/Ludovic/Desktop/espacio/tempoMarcianos.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/partido 1449328898 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/tempoMarcianos/Behavioral 1449328914 \
+      FL C:/Users/Ludovic/Desktop/espacio/tempoMarcianos.vhd \
+      EN work/tempoMarcianos 1449328913
+FL C:/Users/Ludovic/Desktop/espacio/tempoNave.vhd 2015/12/01.16:55:24 P.20131013
+EN work/tempoNave 1449328917 FL C:/Users/Ludovic/Desktop/espacio/tempoNave.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/partido 1449328898 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/tempoNave/Behavioral 1449328918 \
+      FL C:/Users/Ludovic/Desktop/espacio/tempoNave.vhd EN work/tempoNave 1449328917
+FL C:/Users/Ludovic/Desktop/espacio/vga.vhd 2015/12/01.17:56:16 P.20131013
+EN work/vga 1449328907 FL C:/Users/Ludovic/Desktop/espacio/vga.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/vga/Behavioral 1449328908 \
+      FL C:/Users/Ludovic/Desktop/espacio/vga.vhd EN work/vga 1449328907 \
+      CP divisorF CP syncH CP syncV CP rgbMux

@@ -1,0 +1,6 @@
+vhdl isim_temp "syncV.vhd"
+vhdl isim_temp "syncH.vhd"
+vhdl isim_temp "rgbMux.vhd"
+vhdl isim_temp "divisorF.vhd"
+vhdl isim_temp "vga.vhd"
+vhdl isim_temp "tbVga.vhd"

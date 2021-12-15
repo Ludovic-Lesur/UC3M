@@ -1,0 +1,839 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: spaceInv.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "spaceInv.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "spaceInv"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : spaceInv
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/partido.vhd" in Library work.
+Architecture partido of Entity partido is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/divisorF.vhd" in Library work.
+Architecture behavioral of Entity divisorf is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/syncH.vhd" in Library work.
+Architecture behavioral of Entity synch is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/syncV.vhd" in Library work.
+Architecture behavioral of Entity syncv is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/rgbMux.vhd" in Library work.
+Architecture behavioral of Entity rgbmux is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/vga.vhd" in Library work.
+Architecture behavioral of Entity vga is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/marcianos.vhd" in Library work.
+Architecture behavioral of Entity marcianos is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/formato.vhd" in Library work.
+Architecture behavioral of Entity formato is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/tempoMarcianos.vhd" in Library work.
+Architecture behavioral of Entity tempomarcianos is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/nave.vhd" in Library work.
+Architecture behavioral of Entity nave is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/tempoNave.vhd" in Library work.
+Architecture behavioral of Entity temponave is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/bala.vhd" in Library work.
+Architecture behavioral of Entity bala is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/tempoBala.vhd" in Library work.
+Architecture behavioral of Entity tempobala is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/tempoInicio.vhd" in Library work.
+Architecture behavioral of Entity tempoinicio is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/maquinaEstado.vhd" in Library work.
+Architecture behavioral of Entity maquinaestado is up to date.
+Compiling vhdl file "C:/Users/Ludovic/Desktop/espacio/spaceInv.vhd" in Library work.
+Architecture behavioral of Entity spaceinv is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <spaceInv> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <vga> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <marcianos> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <formato> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tempoMarcianos> in library <work> (architecture <behavioral>) with generics.
+	paso = 10
+	t1 = 200
+
+Analyzing hierarchy for entity <nave> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tempoNave> in library <work> (architecture <behavioral>) with generics.
+	tiempoMS = 20
+
+Analyzing hierarchy for entity <bala> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tempoBala> in library <work> (architecture <behavioral>) with generics.
+	tiempoMS = 50
+
+Analyzing hierarchy for entity <tempoInicio> in library <work> (architecture <behavioral>) with generics.
+	tiempoMS = 100
+
+Analyzing hierarchy for entity <maquinaEstado> in library <work> (architecture <behavioral>) with generics.
+	NumeroPartidos = 8
+
+Analyzing hierarchy for entity <divisorF> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <syncH> in library <work> (architecture <behavioral>) with generics.
+	AH = 640
+	BH = 654
+	CH = 752
+	DH = 800
+
+Analyzing hierarchy for entity <syncV> in library <work> (architecture <behavioral>) with generics.
+	AV = 480
+	BV = 490
+	CV = 492
+	DV = 521
+
+Analyzing hierarchy for entity <rgbMux> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <spaceInv> in library <work> (Architecture <behavioral>).
+Entity <spaceInv> analyzed. Unit <spaceInv> generated.
+
+Analyzing Entity <vga> in library <work> (Architecture <behavioral>).
+Entity <vga> analyzed. Unit <vga> generated.
+
+Analyzing Entity <divisorF> in library <work> (Architecture <behavioral>).
+Entity <divisorF> analyzed. Unit <divisorF> generated.
+
+Analyzing generic Entity <syncH> in library <work> (Architecture <behavioral>).
+	AH = 640
+	BH = 654
+	CH = 752
+	DH = 800
+Entity <syncH> analyzed. Unit <syncH> generated.
+
+Analyzing generic Entity <syncV> in library <work> (Architecture <behavioral>).
+	AV = 480
+	BV = 490
+	CV = 492
+	DV = 521
+Entity <syncV> analyzed. Unit <syncV> generated.
+
+Analyzing Entity <rgbMux> in library <work> (Architecture <behavioral>).
+Entity <rgbMux> analyzed. Unit <rgbMux> generated.
+
+Analyzing Entity <marcianos> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/Users/Ludovic/Desktop/espacio/marcianos.vhd" line 147: Index value(s) does not match array range, simulation mismatch.
+Entity <marcianos> analyzed. Unit <marcianos> generated.
+
+Analyzing Entity <formato> in library <work> (Architecture <behavioral>).
+Entity <formato> analyzed. Unit <formato> generated.
+
+Analyzing generic Entity <tempoMarcianos> in library <work> (Architecture <behavioral>).
+	paso = 10
+	t1 = 200
+Entity <tempoMarcianos> analyzed. Unit <tempoMarcianos> generated.
+
+Analyzing Entity <nave> in library <work> (Architecture <behavioral>).
+Entity <nave> analyzed. Unit <nave> generated.
+
+Analyzing generic Entity <tempoNave> in library <work> (Architecture <behavioral>).
+	tiempoMS = 20
+Entity <tempoNave> analyzed. Unit <tempoNave> generated.
+
+Analyzing Entity <bala> in library <work> (Architecture <behavioral>).
+Entity <bala> analyzed. Unit <bala> generated.
+
+Analyzing generic Entity <tempoBala> in library <work> (Architecture <behavioral>).
+	tiempoMS = 50
+Entity <tempoBala> analyzed. Unit <tempoBala> generated.
+
+Analyzing generic Entity <tempoInicio> in library <work> (Architecture <behavioral>).
+	tiempoMS = 100
+Entity <tempoInicio> analyzed. Unit <tempoInicio> generated.
+
+Analyzing generic Entity <maquinaEstado> in library <work> (Architecture <behavioral>).
+	NumeroPartidos = 8
+Entity <maquinaEstado> analyzed. Unit <maquinaEstado> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <marcianos>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/marcianos.vhd".
+    Found 32x32-bit ROM for signal <Color$rom0000> created at line 147.
+    Found 1-bit register for signal <Tocado>.
+    Found 1-bit 20-to-1 multiplexer for signal <$varindex0000> created at line 147.
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0001>.
+    Found 1-bit 20-to-1 multiplexer for signal <$varindex0002> created at line 111.
+    Found 5-bit comparator equal for signal <Color$cmp_eq0000> created at line 147.
+    Found 20-bit register for signal <fila>.
+    Found 4-bit comparator not equal for signal <fila_8$cmp_ne0000> created at line 111.
+    Found 4-bit comparator equal for signal <Tocado$cmp_eq0000> created at line 111.
+    Found 4-bit register for signal <yComun>.
+    Found 4-bit adder for signal <yComun$addsub0000>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <marcianos> synthesized.
+
+
+Synthesizing Unit <formato>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/formato.vhd".
+    Found 1-bit xor2 for signal <RGB_0$xor0000> created at line 74.
+Unit <formato> synthesized.
+
+
+Synthesizing Unit <tempoMarcianos>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/tempoMarcianos.vhd".
+WARNING:Xst:643 - "C:/Users/Ludovic/Desktop/espacio/tempoMarcianos.vhd" line 47: The result of a 4x4-bit multiplication is partially used. Only the 7 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/Ludovic/Desktop/espacio/tempoMarcianos.vhd" line 58: The result of a 33x17-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit register for signal <EnableMarcianos>.
+    Found 4x4-bit multiplier for signal <$mult0000> created at line 47.
+    Found 33x17-bit multiplier for signal <$mult0001> created at line 58.
+    Found 32-bit adder for signal <$sub0000> created at line 47.
+    Found 32-bit up counter for signal <a>.
+    Found 32-bit comparator equal for signal <a$cmp_eq0000> created at line 58.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <tempoMarcianos> synthesized.
+
+
+Synthesizing Unit <nave>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/nave.vhd".
+    Found 32x32-bit ROM for signal <Color$rom0000> created at line 156.
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000>.
+    Found 5-bit comparator equal for signal <Color$cmp_eq0000> created at line 156.
+    Found 1-bit register for signal <DerechaAnt>.
+    Found 1-bit register for signal <IzquierdaAnt>.
+    Found 5-bit register for signal <xNave>.
+    Found 5-bit addsub for signal <xNave$addsub0000>.
+    Found 5-bit comparator greatequal for signal <xNave$cmp_ge0000> created at line 138.
+    Found 5-bit comparator lessequal for signal <xNave$cmp_le0000> created at line 133.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <nave> synthesized.
+
+
+Synthesizing Unit <tempoNave>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/tempoNave.vhd".
+    Found 1-bit register for signal <EnableNave>.
+    Found 32-bit up counter for signal <a>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <tempoNave> synthesized.
+
+
+Synthesizing Unit <bala>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/bala.vhd".
+    Found 32x32-bit ROM for signal <Color$rom0000> created at line 169.
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000>.
+    Found 5-bit comparator equal for signal <Color$cmp_eq0000> created at line 169.
+    Found 5-bit comparator equal for signal <Color$cmp_eq0001> created at line 169.
+    Found 1-bit register for signal <DisparoAnt>.
+    Found 1-bit register for signal <Inicial>.
+    Found 4-bit comparator greater for signal <Inicial$cmp_gt0000> created at line 138.
+    Found 5-bit register for signal <xBalaInt>.
+    Found 4-bit register for signal <yBalaInt>.
+    Found 4-bit subtractor for signal <yBalaInt$addsub0000> created at line 140.
+    Found 4-bit comparator lessequal for signal <yBalaInt$cmp_le0000> created at line 138.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <bala> synthesized.
+
+
+Synthesizing Unit <tempoBala>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/tempoBala.vhd".
+    Found 1-bit register for signal <EnableBala>.
+    Found 32-bit up counter for signal <a>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <tempoBala> synthesized.
+
+
+Synthesizing Unit <tempoInicio>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/tempoInicio.vhd".
+    Found 1-bit register for signal <Inicio>.
+    Found 32-bit up counter for signal <a>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <tempoInicio> synthesized.
+
+
+Synthesizing Unit <maquinaEstado>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/maquinaEstado.vhd".
+    Found finite state machine <FSM_0> for signal <estadoActual>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 6                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | espera                                         |
+    | Power Up State     | tablero                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit comparator less for signal <estadoActual$cmp_lt0000> created at line 111.
+    Found 1-bit register for signal <InicioAnt>.
+    Found 4-bit up counter for signal <partidosGanados>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <maquinaEstado> synthesized.
+
+
+Synthesizing Unit <divisorF>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/divisorF.vhd".
+    Found 1-bit register for signal <a>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <divisorF> synthesized.
+
+
+Synthesizing Unit <syncH>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/syncH.vhd".
+    Found 11-bit comparator less for signal <ApagarH$cmp_lt0000> created at line 75.
+    Found 10-bit up counter for signal <p>.
+    Found 11-bit comparator greatequal for signal <p$cmp_ge0000> created at line 59.
+    Found 11-bit comparator greatequal for signal <SyncH$cmp_ge0000> created at line 78.
+    Found 11-bit comparator less for signal <SyncH$cmp_lt0000> created at line 78.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   4 Comparator(s).
+Unit <syncH> synthesized.
+
+
+Synthesizing Unit <syncV>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/syncV.vhd".
+    Found 11-bit comparator less for signal <ApagarV$cmp_lt0000> created at line 71.
+    Found 10-bit up counter for signal <p>.
+    Found 11-bit comparator greatequal for signal <p$cmp_ge0000> created at line 58.
+    Found 11-bit comparator greatequal for signal <SyncV$cmp_ge0000> created at line 74.
+    Found 11-bit comparator less for signal <SyncV$cmp_lt0000> created at line 74.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   4 Comparator(s).
+Unit <syncV> synthesized.
+
+
+Synthesizing Unit <rgbMux>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/rgbMux.vhd".
+Unit <rgbMux> synthesized.
+
+
+Synthesizing Unit <vga>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/vga.vhd".
+Unit <vga> synthesized.
+
+
+Synthesizing Unit <spaceInv>.
+    Related source file is "C:/Users/Ludovic/Desktop/espacio/spaceInv.vhd".
+Unit <spaceInv> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 32x32-bit ROM                                         : 3
+# Multipliers                                          : 2
+ 33x17-bit multiplier                                  : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 5-bit addsub                                          : 1
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 1
+# Registers                                            : 35
+ 1-bit register                                        : 31
+ 4-bit register                                        : 2
+ 5-bit register                                        : 2
+# Comparators                                          : 20
+ 11-bit comparator greatequal                          : 4
+ 11-bit comparator less                                : 4
+ 32-bit comparator equal                               : 1
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 4-bit comparator not equal                            : 1
+ 5-bit comparator equal                                : 4
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 1-bit 20-to-1 multiplexer                             : 2
+ 1-bit 32-to-1 multiplexer                             : 3
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <bloqueMaquinaEstado/estadoActual/FSM> on signal <estadoActual[1:3]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ tablero     | 000
+ espera      | 001
+ jugando     | 011
+ ganado      | 010
+ perdido     | 111
+ juegoganado | 110
+-------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 3
+ 32x32-bit ROM                                         : 3
+# Multipliers                                          : 2
+ 33x17-bit multiplier                                  : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 5-bit addsub                                          : 1
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 1
+# Registers                                            : 49
+ Flip-Flops                                            : 49
+# Comparators                                          : 20
+ 11-bit comparator greatequal                          : 4
+ 11-bit comparator less                                : 4
+ 32-bit comparator equal                               : 1
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 4-bit comparator not equal                            : 1
+ 5-bit comparator equal                                : 4
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 1-bit 20-to-1 multiplexer                             : 2
+ 1-bit 32-to-1 multiplexer                             : 3
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <spaceInv> ...
+
+Optimizing unit <marcianos> ...
+
+Optimizing unit <tempoMarcianos> ...
+
+Optimizing unit <maquinaEstado> ...
+
+Optimizing unit <syncH> ...
+
+Optimizing unit <syncV> ...
+
+Optimizing unit <nave> ...
+
+Optimizing unit <bala> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block spaceInv, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 204
+ Flip-Flops                                            : 204
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : spaceInv.ngr
+Top Level Output File Name         : spaceInv
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 1049
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 93
+#      LUT2                        : 127
+#      LUT3                        : 148
+#      LUT4                        : 232
+#      MUXCY                       : 201
+#      MUXF5                       : 62
+#      MUXF6                       : 10
+#      MUXF7                       : 4
+#      MUXF8                       : 1
+#      VCC                         : 1
+#      XORCY                       : 163
+# FlipFlops/Latches                : 204
+#      FDC                         : 132
+#      FDCE                        : 44
+#      FDE                         : 10
+#      FDP                         : 1
+#      FDPE                        : 17
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 6
+#      OBUF                        : 5
+# MULTs                            : 2
+#      MULT18X18SIO                : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      326  out of   4656     7%  
+ Number of Slice Flip Flops:            204  out of   9312     2%  
+ Number of 4 input LUTs:                606  out of   9312     6%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of MULT18X18SIOs:                 2  out of     20    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 204   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 194   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 18.212ns (Maximum Frequency: 54.909MHz)
+   Minimum input arrival time before clock: 7.564ns
+   Maximum output required time after clock: 15.107ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 18.212ns (frequency: 54.909MHz)
+  Total number of paths / destination ports: 1659486 / 268
+-------------------------------------------------------------------------
+Delay:               18.212ns (Levels of Logic = 52)
+  Source:            bloqueMaquinaEstado/partidosGanados_1 (FF)
+  Destination:       bloqueTempoMarcianos/a_31 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: bloqueMaquinaEstado/partidosGanados_1 to bloqueTempoMarcianos/a_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.591   1.158  bloqueMaquinaEstado/partidosGanados_1 (bloqueMaquinaEstado/partidosGanados_1)
+     LUT2:I0->O            1   0.704   0.420  bloqueTempoMarcianos/Madd__sub0000_xor<2>11 (bloqueTempoMarcianos/_sub0000<2>)
+     MULT18X18SIO:A2->P17    1   4.873   0.499  bloqueTempoMarcianos/Mmult__mult0001 (bloqueTempoMarcianos/Mmult__mult0001_P_to_Adder_A_17)
+     LUT2:I1->O            1   0.704   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<17> (bloqueTempoMarcianos/Mmult__mult00010_Madd_lut<17>)
+     MUXCY:S->O            1   0.464   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<17> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<18> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<19> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<20> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29> (bloqueTempoMarcianos/Mmult__mult00010_Madd_cy<29>)
+     XORCY:CI->O           1   0.804   0.499  bloqueTempoMarcianos/Mmult__mult00010_Madd_xor<30> (bloqueTempoMarcianos/_mult0001<30>)
+     LUT4:I1->O            1   0.704   0.000  bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15> (bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_lut<15>)
+     MUXCY:S->O           34   0.736   1.298  bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15> (bloqueTempoMarcianos/Mcompar_a_cmp_eq0000_cy<15>)
+     LUT3:I2->O            1   0.704   0.000  bloqueTempoMarcianos/Mcount_a_lut<0> (bloqueTempoMarcianos/Mcount_a_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  bloqueTempoMarcianos/Mcount_a_cy<0> (bloqueTempoMarcianos/Mcount_a_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<1> (bloqueTempoMarcianos/Mcount_a_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<2> (bloqueTempoMarcianos/Mcount_a_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<3> (bloqueTempoMarcianos/Mcount_a_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<4> (bloqueTempoMarcianos/Mcount_a_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<5> (bloqueTempoMarcianos/Mcount_a_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<6> (bloqueTempoMarcianos/Mcount_a_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<7> (bloqueTempoMarcianos/Mcount_a_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<8> (bloqueTempoMarcianos/Mcount_a_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<9> (bloqueTempoMarcianos/Mcount_a_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<10> (bloqueTempoMarcianos/Mcount_a_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<11> (bloqueTempoMarcianos/Mcount_a_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<12> (bloqueTempoMarcianos/Mcount_a_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<13> (bloqueTempoMarcianos/Mcount_a_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<14> (bloqueTempoMarcianos/Mcount_a_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<15> (bloqueTempoMarcianos/Mcount_a_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<16> (bloqueTempoMarcianos/Mcount_a_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<17> (bloqueTempoMarcianos/Mcount_a_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<18> (bloqueTempoMarcianos/Mcount_a_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<19> (bloqueTempoMarcianos/Mcount_a_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<20> (bloqueTempoMarcianos/Mcount_a_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<21> (bloqueTempoMarcianos/Mcount_a_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<22> (bloqueTempoMarcianos/Mcount_a_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<23> (bloqueTempoMarcianos/Mcount_a_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<24> (bloqueTempoMarcianos/Mcount_a_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<25> (bloqueTempoMarcianos/Mcount_a_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<26> (bloqueTempoMarcianos/Mcount_a_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<27> (bloqueTempoMarcianos/Mcount_a_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<28> (bloqueTempoMarcianos/Mcount_a_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<29> (bloqueTempoMarcianos/Mcount_a_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  bloqueTempoMarcianos/Mcount_a_cy<30> (bloqueTempoMarcianos/Mcount_a_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  bloqueTempoMarcianos/Mcount_a_xor<31> (bloqueTempoMarcianos/Mcount_a31)
+     FDC:D                     0.308          bloqueTempoMarcianos/a_31
+    ----------------------------------------
+    Total                     18.212ns (14.338ns logic, 3.874ns route)
+                                       (78.7% logic, 21.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 62 / 40
+-------------------------------------------------------------------------
+Offset:              7.564ns (Levels of Logic = 5)
+  Source:            Izquierda (PAD)
+  Destination:       bloqueNave/xNave_2 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Izquierda to bloqueNave/xNave_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.218   0.995  Izquierda_IBUF (Izquierda_IBUF)
+     LUT4:I0->O            1   0.704   0.499  bloqueNave/xNave_not000141 (bloqueNave/xNave_not000141)
+     LUT3:I1->O            1   0.704   0.424  bloqueNave/xNave_not000144 (bloqueNave/xNave_not000144)
+     LUT4:I3->O            1   0.704   0.424  bloqueNave/xNave_not000170 (bloqueNave/xNave_not000170)
+     LUT4:I3->O            5   0.704   0.633  bloqueNave/xNave_not000183 (bloqueNave/xNave_not0001)
+     FDCE:CE                   0.555          bloqueNave/xNave_2
+    ----------------------------------------
+    Total                      7.564ns (4.589ns logic, 2.975ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 1644 / 5
+-------------------------------------------------------------------------
+Offset:              15.107ns (Levels of Logic = 11)
+  Source:            bloqueVga/bloqueSyncV/p_4 (FF)
+  Destination:       B (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: bloqueVga/bloqueSyncV/p_4 to B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            34   0.591   1.438  bloqueVga/bloqueSyncV/p_4 (bloqueVga/bloqueSyncV/p_4)
+     LUT3:I0->O            3   0.704   0.610  bloqueMarcianos/Mrom_Color_rom00002411 (bloqueMarcianos/N10)
+     LUT3:I1->O            4   0.704   0.666  bloqueMarcianos/Mrom_Color_rom0000131 (bloqueMarcianos/Mrom_Color_rom000013)
+     LUT3:I1->O            1   0.704   0.000  bloqueMarcianos/Mmux__varindex0001_101 (bloqueMarcianos/Mmux__varindex0001_101)
+     MUXF5:I1->O           1   0.321   0.000  bloqueMarcianos/Mmux__varindex0001_9_f5 (bloqueMarcianos/Mmux__varindex0001_9_f5)
+     MUXF6:I1->O           1   0.521   0.455  bloqueMarcianos/Mmux__varindex0001_8_f6 (bloqueMarcianos/Mmux__varindex0001_8_f6)
+     LUT3:I2->O            1   0.704   0.000  bloqueMarcianos/Mmux__varindex0001_4 (bloqueMarcianos/Mmux__varindex0001_4)
+     MUXF5:I0->O           1   0.321   0.455  bloqueMarcianos/Mmux__varindex0001_2_f5 (bloqueMarcianos/_varindex00011)
+     LUT3:I2->O            3   0.704   0.610  bloqueMarcianos/Color_and0000100 (colorMarcianosInt<0>)
+     LUT4:I1->O            1   0.704   0.499  bloqueVga/bloqueRgbMux/bOut5 (bloqueVga/bloqueRgbMux/bOut5)
+     LUT4:I1->O            1   0.704   0.420  bloqueVga/bloqueRgbMux/bOut31 (B_OBUF)
+     OBUF:I->O                 3.272          B_OBUF (B)
+    ----------------------------------------
+    Total                     15.107ns (9.954ns logic, 5.153ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.84 secs
+ 
+--> 
+
+Total memory usage is 223240 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

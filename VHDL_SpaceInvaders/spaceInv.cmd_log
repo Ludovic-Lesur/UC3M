@@ -1,0 +1,185 @@
+vhdtdtfi -lib work syncV.vhd -lib work syncH.vhd -lib work rgbMux.vhd -lib work divisorF.vhd -lib work vga.vhd -lib work tempoNave.vhd -lib work tempoMarcianos.vhd -lib work tempoBala.vhd -lib work nave.vhd -lib work marcianos.vhd -lib work maquinaEstado.vhd -lib work formato.vhd -lib work bala.vhd -lib work spaceInv.vhd -prj espacio -o spaceInv.spl -module spaceInv -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work syncV.vhd -lib work syncH.vhd -lib work rgbMux.vhd -lib work divisorF.vhd -lib work vga.vhd -lib work tempoNave.vhd -lib work tempoMarcianos.vhd -lib work tempoBala.vhd -lib work nave.vhd -lib work marcianos.vhd -lib work maquinaEstado.vhd -lib work formato.vhd -lib work bala.vhd -lib work spaceInv.vhd -prj espacio -o spaceInv.spl -module spaceInv -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e spaceInv.spl C:/Users/Ludovic/Desktop/espacio/spaceInv.sym 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+vhdtdtfi -lib work syncV.vhd -lib work syncH.vhd -lib work rgbMux.vhd -lib work divisorF.vhd -lib work vga.vhd -lib work tempoNave.vhd -lib work tempoMarcianos.vhd -lib work tempoBala.vhd -lib work nave.vhd -lib work marcianos.vhd -lib work maquinaEstado.vhd -lib work formato.vhd -lib work bala.vhd -lib work spaceInv.vhd -prj espacio -o spaceInv.spl -module spaceInv -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e spaceInv.spl {C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.sym} 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+vhdtdtfi -lib work syncV.vhd -lib work syncH.vhd -lib work rgbMux.vhd -lib work divisorF.vhd -lib work vga.vhd -lib work tempoNave.vhd -lib work tempoMarcianos.vhd -lib work tempoBala.vhd -lib work nave.vhd -lib work marcianos.vhd -lib work maquinaEstado.vhd -lib work formato.vhd -lib work bala.vhd -lib work spaceInv.vhd -prj espacio -o spaceInv.spl -module spaceInv -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e spaceInv.spl {C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.sym} 
+vhdtdtfi -prj espacio -o "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.vhi" -module spaceInv -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work syncV.vhd -lib work syncH.vhd -lib work rgbMux.vhd -lib work divisorF.vhd -lib work vga.vhd -lib work tempoNave.vhd -lib work tempoMarcianos.vhd -lib work tempoBala.vhd -lib work nave.vhd -lib work marcianos.vhd -lib work maquinaEstado.vhd -lib work formato.vhd -lib work bala.vhd -lib work spaceInv.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+vhdtdtfi -lib work syncV.vhd -lib work syncH.vhd -lib work rgbMux.vhd -lib work partido.vhd -lib work divisorF.vhd -lib work vga.vhd -lib work tempoNave.vhd -lib work tempoMarcianos.vhd -lib work tempoBala.vhd -lib work nave.vhd -lib work marcianos.vhd -lib work maquinaEstado.vhd -lib work formato.vhd -lib work bala.vhd -lib work spaceInv.vhd -prj espacio -o spaceInv.spl -module spaceInv -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e spaceInv.spl {C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.sym} 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.xst" -ofn "C:/Documents and Settings/Xilinx/Escritorio/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 "spaceInv.ngc" spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+vhdtdtfi -lib work syncV.vhd -lib work syncH.vhd -lib work rgbMux.vhd -lib work partido.vhd -lib work divisorF.vhd -lib work vga.vhd -lib work tempoNave.vhd -lib work tempoMarcianos.vhd -lib work tempoInicio.vhd -lib work tempoBala.vhd -lib work nave.vhd -lib work marcianos.vhd -lib work maquinaEstado.vhd -lib work formato.vhd -lib work bala.vhd -lib work spaceInv.vhd -prj espacio -o spaceInv.spl -module spaceInv -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e spaceInv.spl C:/Users/Ludovic/Desktop/espacio/spaceInv.sym 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+netgen -intstyle ise -ar Structure -tm spaceInv -w -dir netgen/synthesis -ofmt vhdl -sim spaceInv.ngc spaceInv_synthesis.vhd 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
+xst -intstyle ise -ifn "C:/Users/Ludovic/Desktop/espacio/spaceInv.xst" -ofn "C:/Users/Ludovic/Desktop/espacio/spaceInv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spaceinv.ucf -p xc3s500e-fg320-4 spaceInv.ngc spaceInv.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o spaceInv_map.ncd spaceInv.ngd spaceInv.pcf 
+par -w -intstyle ise -ol high -t 1 spaceInv_map.ncd spaceInv.ncd spaceInv.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml spaceInv.twx spaceInv.ncd -o spaceInv.twr spaceInv.pcf -ucf spaceinv.ucf 
+bitgen -intstyle ise -f spaceInv.ut spaceInv.ncd 
